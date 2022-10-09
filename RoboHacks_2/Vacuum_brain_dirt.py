@@ -23,14 +23,14 @@ if not os.path.exists(newdir):
     os.mkdir(newdir)
 os.chdir(newdir)
 
-curimg = dirtdetection(r'D:\Coding Software\HackathonVSC\Hackathon\RoboHacks_2\floor_image\cleanfloor.jpg')
+curimg = dirtdetection(r'D:\Coding Software\HackathonVSC\Hackathon\RoboHacks_2\floor_image\dirtyfloor.jpg')
 
 curimg = removeVH(curimg)
 
 print(convertRedWhite(curimg))
 
 
-
+'''
 for filename in os.listdir(newdir):
     file_path = os.path.join(newdir, filename)
     try:
@@ -40,6 +40,8 @@ for filename in os.listdir(newdir):
             shutil.rmtree(file_path)
     except Exception as e:
         print('Failed to delete %s. Reason: %s' % (file_path, e))
+
+'''
 
 
 
